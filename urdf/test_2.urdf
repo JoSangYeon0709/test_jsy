@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<robot name="simple_robot">
+  <!-- Link Definitions -->
+  <link name="base_link"/>
+  <link name="link1"/>
+  <link name="link2"/>
+  <link name="link3"/>
+  <link name="link4"/>
+  <link name="link5"/>
+
+  <!-- Joint Definitions -->
+  <joint name="joint1" type="revolute">
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <parent link="base_link"/>
+    <child link="link1"/>
+    <axis xyz="0 0 1"/>
+  </joint>
+
+  <joint name="joint2" type="revolute">
+    <origin xyz="0 0 1" rpy="0 0 0"/>
+    <parent link="link1"/>
+    <child link="link2"/>
+    <axis xyz="0 0 1"/>
+  </joint>
+
+  <joint name="joint3" type="revolute">
+    <origin xyz="0 0 1" rpy="0 0 0"/>
+    <parent link="link2"/>
+    <child link="link3"/>
+    <axis xyz="0 0 1"/>
+  </joint>
+
+  <joint name="joint4" type="revolute">
+    <origin xyz="0 0 1" rpy="0 0 0"/>
+    <parent link="link3"/>
+    <child link="link4"/>
+    <axis xyz="0 0 1"/>
+  </joint>
+
+  <!-- Additional Joint Definitions -->
+  <!-- You can add more joints here if needed -->
+
+</robot>
+

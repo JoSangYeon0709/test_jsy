@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="dyxel_arm_description">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.0266190280842503 0.00413459015203709 0.0862442348129528"
+        rpy="0 0 0" />
+      <mass
+        value="0.0873487052171479" />
+      <inertia
+        ixx="2.19215296408733E-05"
+        ixy="-1.74435847575182E-20"
+        ixz="5.40673187513534E-23"
+        iyy="1.65873170923579E-05"
+        iyz="-6.95944016564115E-10"
+        izz="1.48982425180829E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_jsy/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_jsy/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="link_1">
+    <inertial>
+      <origin
+        xyz="6.1153E-08 0.00056972 -0.022064"
+        rpy="0 0 0" />
+      <mass
+        value="0.01362" />
+      <inertia
+        ixx="5.5011E-06"
+        ixy="-2.5761E-12"
+        ixz="2.8369E-11"
+        iyy="9.5948E-06"
+        iyz="-8.0254E-08"
+        izz="6.1633E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_jsy/meshes/link_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_jsy/meshes/link_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_1"
+    type="revolute">
+    <origin
+      xyz="-0.026618 -0.0725 0.026408"
+      rpy="-3.1416 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_1" />
+    <axis
+      xyz="0 0 1" />
+    <limit 
+      effort="100" 
+      lower="-3.14" 
+      upper="3.14" 
+      velocity="0.5"/>
+  </joint>
+  <link
+    name="link_2">
+    <inertial>
+      <origin
+        xyz="0.0003596 -0.013511 0.018372"
+        rpy="0 0 0" />
+      <mass
+        value="0.1333" />
+      <inertia
+        ixx="3.4849E-05"
+        ixy="-6.0282E-23"
+        ixz="-4.6427E-20"
+        iyy="2.4143E-05"
+        iyz="-6.9594E-10"
+        izz="3.2451E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_jsy/meshes/link_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_jsy/meshes/link_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_2"
+    type="revolute">
+    <origin
+      xyz="0 0 -0.0537"
+      rpy="1.5708 0 0" />
+    <parent
+      link="link_1" />
+    <child
+      link="link_2" />
+    <axis
+      xyz="1 0 0" />
+    <limit 
+      effort="100" 
+      lower="-3.14" 
+      upper="3.14" 
+      velocity="0.5"/>
+  </joint>
+  <link
+    name="link_3">
+    <inertial>
+      <origin
+        xyz="6.1153E-08 0.00056972 -0.022064"
+        rpy="0 0 0" />
+      <mass
+        value="0.01362" />
+      <inertia
+        ixx="5.5011E-06"
+        ixy="-2.5761E-12"
+        ixz="2.8369E-11"
+        iyy="9.5948E-06"
+        iyz="-8.0254E-08"
+        izz="6.1633E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_jsy/meshes/link_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_jsy/meshes/link_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_3"
+    type="revolute">
+    <origin
+      xyz="0 0 0.0513"
+      rpy="3.1416 0 0" />
+    <parent
+      link="link_2" />
+    <child
+      link="link_3" />
+    <axis
+      xyz="0 0 1" />
+    <limit 
+      effort="100" 
+      lower="-3.14" 
+      upper="3.14" 
+      velocity="0.5"/>
+  </joint>
+  <link
+    name="link_4">
+    <inertial>
+      <origin
+        xyz="0.0003596 -0.013511 0.018372"
+        rpy="0 0 0" />
+      <mass
+        value="0.1333" />
+      <inertia
+        ixx="3.4849E-05"
+        ixy="8.2688E-22"
+        ixz="-4.6791E-20"
+        iyy="2.4143E-05"
+        iyz="-6.9594E-10"
+        izz="3.2451E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_jsy/meshes/link_4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_jsy/meshes/link_4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_4"
+    type="revolute">
+    <origin
+      xyz="0 0 -0.0537"
+      rpy="-3.1416 0 0" />
+    <parent
+      link="link_3" />
+    <child
+      link="link_4" />
+    <axis
+      xyz="1 0 0" />
+    <limit 
+      effort="100" 
+      lower="-3.14" 
+      upper="3.14" 
+      velocity="0.5"/>
+  </joint>
+  <link
+    name="link_5">
+    <inertial>
+      <origin
+        xyz="6.1153E-08 0.00056972 -0.022064"
+        rpy="0 0 0" />
+      <mass
+        value="0.01362" />
+      <inertia
+        ixx="5.5011E-06"
+        ixy="-2.5761E-12"
+        ixz="2.8369E-11"
+        iyy="9.5948E-06"
+        iyz="-8.0254E-08"
+        izz="6.1633E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_jsy/meshes/link_5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_jsy/meshes/link_5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_5"
+    type="revolute">
+    <origin
+      xyz="0 0 0.0513"
+      rpy="3.1416 0 0" />
+    <parent
+      link="link_4" />
+    <child
+      link="link_5" />
+    <axis
+      xyz="0 0 1" />
+    <limit 
+      effort="100" 
+      lower="-3.14" 
+      upper="3.14" 
+      velocity="0.5"/>
+  </joint>
+  <link
+    name="link_6">
+    <inertial>
+      <origin
+        xyz="0.0003596 -0.013511 0.018372"
+        rpy="0 0 0" />
+      <mass
+        value="0.1333" />
+      <inertia
+        ixx="3.4849E-05"
+        ixy="3.3553E-22"
+        ixz="-4.7515E-20"
+        iyy="2.4143E-05"
+        iyz="-6.9594E-10"
+        izz="3.2451E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_jsy/meshes/link_6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_jsy/meshes/link_6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_6"
+    type="revolute">
+    <origin
+      xyz="0 0 -0.0537"
+      rpy="-3.1416 0 0" />
+    <parent
+      link="link_5" />
+    <child
+      link="link_6" />
+    <axis
+      xyz="1 0 0" />
+    <limit 
+      effort="100" 
+      lower="-3.14" 
+      upper="3.14" 
+      velocity="0.5"/>
+  </joint>
+  <link
+    name="link_7">
+    <inertial>
+      <origin
+        xyz="6.1153E-08 0.00056972 -0.022064"
+        rpy="0 0 0" />
+      <mass
+        value="0.01362" />
+      <inertia
+        ixx="5.5011E-06"
+        ixy="-2.5761E-12"
+        ixz="2.8369E-11"
+        iyy="9.5948E-06"
+        iyz="-8.0254E-08"
+        izz="6.1633E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_jsy/meshes/link_7.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_jsy/meshes/link_7.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_7"
+    type="revolute">
+    <origin
+      xyz="0 0 0.0513"
+      rpy="3.1416 0 0" />
+    <parent
+      link="link_6" />
+    <child
+      link="link_7" />
+    <axis
+      xyz="0 0 1" />
+    <limit 
+      effort="100" 
+      lower="-3.14" 
+      upper="3.14" 
+      velocity="0.5"/>
+  </joint>
+</robot>
